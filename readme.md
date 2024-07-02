@@ -17,7 +17,8 @@ ___
 
 ### 2. Requerimientos
 
-```bash
+```py
+# Datos de ejemplo
 pip install Django
 pip install django-environ
 pip install psycopg
@@ -32,6 +33,7 @@ ___
 Primero en un archivo .env en la ruta inicial del proyecto se crea este archivo que contendra los datos internos del proyecto:
 
 ```bash
+
 SECRET_KEY="django-insecure-aº123!f7)6#vi*bu2asdasdwasa^hx6jn23d*%%=asdasdasb4"
 DEBUG=True
 DATABASE_NAME="data_scraping"
