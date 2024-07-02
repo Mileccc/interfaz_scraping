@@ -7,9 +7,13 @@ Creé este proyecto ya que tengo pensado afinar un modelo de lenguaje (LLM) en d
 
 En otro proyecto tengo pensado usar esos datos para vectorizar los datos y pasarlos a una base de datos vectorial o RAG y así poder afinar la respuesta del LLM.
 
+
 <div style="display:flex; justify-content:center; align-items:center;">
-   <img src="./webs_scrapings/static/images/interfaz.png" alt="imagen" style="width: 50%;">
+   <img src="./webs_scrapings/static/images/interfaz.png" alt="imagen" style="width: 70%;">
 </div>
+
+___
+
 
 ### 2. Requerimientos
 
@@ -21,5 +25,39 @@ pip install beautifulsoup4
 pip install selenium
 pip install undetected-chromedriver
 ```
-### 3. Scrapeando 
-Al enviar 
+
+___
+
+### 3. Vista rápida
+Primero en un archivo .env en la ruta inicial del proyecto se crea este archivo que contendra los datos internos del proyecto:
+
+```bash
+SECRET_KEY="django-insecure-aº123!f7)6#vi*bu2asdasdwasa^hx6jn23d*%%=asdasdasb4"
+DEBUG=True
+DATABASE_NAME="data_scraping"
+DATABASE_USER='postgres'
+DATABASE_PASSWORD="bn234Nb"
+DATABASE_HOST="127.0.0.1"
+DATABASE_PORT="4000"
+```
+
+Usando las URLs de la web que se quiere scrapear (URL_inicial y URL_base, ya que aveces varian o solo se quieren conseguir ciertas urls) y los selectores (CSS) se configura y se pulsa Realizar Scraping.
+
+
+<div style="display:flex; justify-content:center; align-items:center;">
+   <img src="./webs_scrapings/static/images/consola.png" alt="imagen" style="width: 80%;">
+</div>
+
+___
+
+Esto iniciara a scrapear los datos y a guardarlos en la BD todos los datos únicos scrapeados:
+
+___
+
+
+<div style="display:flex; justify-content:center; align-items:center;">
+   <img src="./webs_scrapings/static/images/bd.png" alt="imagen" style="width: 80%;">
+</div>
+
+
+___

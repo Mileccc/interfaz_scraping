@@ -5,8 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from .iniciar_webdriver_uc import iniciar_webdriver
 from ..models import Scraper
-import io
-import sys
 
 
 def scraper_data(scrape_parametros):
