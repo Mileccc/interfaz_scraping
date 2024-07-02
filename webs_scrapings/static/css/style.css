@@ -1,0 +1,208 @@
+:root {
+  /* Tus colores existentes */
+  --color-primary: rgb(42, 43, 58);
+  --color-text: rgb(198, 198, 219);
+  --color-text-boton: rgb(127, 250, 209);
+  --color-border: rgb(98, 98, 118);
+  --color-input-bg: rgb(60, 60, 78);
+
+  /* Nuevos colores para los mensajes */
+  --color-error: #ff6b6b;
+  --color-info: #4ecdc4;
+  --color-success: #45b7d1;
+  --color-default: #dcdcdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--menu-bg-color);
+  border-radius: var(--menu-border-radius);
+  padding: var(--menu-padding);
+}
+
+.list-menu li {
+  margin: 0 10px;
+}
+
+.list-menu li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: var(--color-text);
+  font-size: 1.5em;
+  border-radius: var(--menu-border-radius);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-menu li a:hover {
+  color: var(--color-text-boton);
+  background-color: var(--menu-hover-bg-color);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--color-text);
+}
+
+.div-hr {
+  width: 100%;
+}
+
+.div-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-imagen img {
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.div-formulario-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.div-formulario-link h3 {
+  margin: 50px 0;
+}
+
+.div-formulario-link form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-input-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.div-formulario-link form div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-link {
+  width: 70%;
+}
+
+.input-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.input-link:focus {
+  outline: none;
+  border-color: var(--color-text-boton);
+  box-shadow: 0 0 5px var(--color-text-boton);
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+label[for="id_link"] {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  align-self: flex-start;
+}
+
+.btn-link {
+  /* margin-left: 30px; */
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.5em;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  align-self: center;
+}
+
+.btn-link:hover {
+  color: var(--color-text-boton);
+  background-color: var(--color-input-bg);
+  border-color: var(--color-text-boton);
+}
+
+.p-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.p-3 a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.p-3 a:hover {
+  color: var(--color-text-boton);
+}
